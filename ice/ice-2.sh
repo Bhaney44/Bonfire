@@ -45,6 +45,8 @@ err
 # This label is executed if the value on top of the stack matches the byte array 0x44f8d5de.
 label6:  
 # This instruction pushes the second application argument onto the stack.
+# Ith value of the array field F of the current transaction. 
+# txna can be called using txn with 2 immediates.
 txna ApplicationArgs 1  
 # This instruction converts the value on top of the stack into an integer.
 btoi  
@@ -63,6 +65,7 @@ return
 # This subroutine is defined to transfer an asset.
 label4:  
 # This instruction sets the protocol version to 1.0.
+# Prepare top call frame for a retsub that will assume A args and R return values.
 proto 1 0  
 # This instruction begins an inner transaction.
 itxn_begin  
@@ -79,6 +82,7 @@ global CurrentApplicationAddress
 # This instruction sets the recipient of the asset transfer.
 itxn_field AssetReceiver  
 # This instruction digs one level deep into the transaction frame and pushes the value at that level onto the stack.
+# Nth (signed) value from the frame pointer.
 frame_dig -1  
 #This instruction sets the asset to be transferred.
 itxn_field XferAsset  
