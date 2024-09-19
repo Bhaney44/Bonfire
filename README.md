@@ -8,6 +8,8 @@ This work has been performed with support from the Algorand Foundation xGov Gran
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d77b7fd3-cc08-46c6-ae0c-15fce5763f82/deploy-status)](https://app.netlify.com/sites/asa-bonfire/deploys)
 
+Disscussion regarding this application can be directed to the Algorand Developer Forum, [xGov86: Bonfire](https://forum.algorand.org/t/xgov-86-bonfire/10541).
+
 ## What is Bonfire?
 
 Bonfire is an interface for burning Algorand ASAs in a permissionless, verifiable, and
